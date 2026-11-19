@@ -1,0 +1,24 @@
+{
+  "product": "AI Agent Blocklist",
+  "version": "fixture-1",
+  "counts": {
+    "total": 12,
+    "by_kind": {"domain": 3, "chrome_ext": 1, "firefox_ext": 1, "vscode_ext": 1, "mac_bundle_id": 1, "process_win": 1, "process_mac": 1, "process_cli": 1, "npm": 1, "pypi": 1},
+    "by_agent_type": {"Browser agent": 3, "AI browser": 4, "MCP server": 3, "Coding agent": 2}
+  },
+  "columns": ["tool_name", "tool_domain", "category", "subcategory", "agent_type", "kind", "ident", "name", "platform", "risk_grade"],
+  "entries": [
+    {"tool_name": "Example Agent", "tool_domain": "example-agent.ai", "category": "AI agents", "subcategory": "Browser agents", "agent_type": "Browser agent", "kind": "domain", "ident": "example-agent.ai", "name": "Example Agent", "platform": "web", "risk_grade": "High"},
+    {"tool_name": "Example Agent", "tool_domain": "example-agent.ai", "category": "AI agents", "subcategory": "Browser agents", "agent_type": "Browser agent", "kind": "chrome_ext", "ident": "abcdefghijklmnopabcdefghijklmnop", "name": "Example Agent for Chrome", "platform": "chrome", "risk_grade": "High"},
+    {"tool_name": "Example Agent", "tool_domain": "example-agent.ai", "category": "AI agents", "subcategory": "Browser agents", "agent_type": "Browser agent", "kind": "firefox_ext", "ident": "agent-helper@example.org", "name": "Example Agent Helper", "platform": "firefox", "risk_grade": "High"},
+    {"tool_name": "Sample Browser", "tool_domain": "sample-browser.app", "category": "AI browsers", "subcategory": "Agentic browsers", "agent_type": "AI browser", "kind": "domain", "ident": "sample-browser.app", "name": "Sample Browser", "platform": "web", "risk_grade": "Elevated"},
+    {"tool_name": "Sample Browser", "tool_domain": "sample-browser.app", "category": "AI browsers", "subcategory": "Agentic browsers", "agent_type": "AI browser", "kind": "mac_bundle_id", "ident": "com.example.agentbrowser", "name": "Sample Browser", "platform": "macos", "risk_grade": "Elevated"},
+    {"tool_name": "Sample Browser", "tool_domain": "sample-browser.app", "category": "AI browsers", "subcategory": "Agentic browsers", "agent_type": "AI browser", "kind": "process_win", "ident": "SampleBrowser.exe", "name": "Sample Browser", "platform": "windows", "risk_grade": "Elevated"},
+    {"tool_name": "Sample Browser", "tool_domain": "sample-browser.app", "category": "AI browsers", "subcategory": "Agentic browsers", "agent_type": "AI browser", "kind": "process_mac", "ident": "Sample Browser Helper", "name": "Sample Browser", "platform": "macos", "risk_grade": "Elevated"},
+    {"tool_name": "Demo MCP Server", "tool_domain": "demo-mcp-server.dev", "category": "AI agents", "subcategory": "MCP servers", "agent_type": "MCP server", "kind": "domain", "ident": "demo-mcp-server.dev", "name": "Demo MCP Server", "platform": "web", "risk_grade": "Moderate"},
+    {"tool_name": "Demo MCP Server", "tool_domain": "demo-mcp-server.dev", "category": "AI agents", "subcategory": "MCP servers", "agent_type": "MCP server", "kind": "npm", "ident": "demo-mcp-server", "name": "demo-mcp-server", "platform": "node", "risk_grade": "Moderate"},
+    {"tool_name": "Demo MCP Server", "tool_domain": "demo-mcp-server.dev", "category": "AI agents", "subcategory": "MCP servers", "agent_type": "MCP server", "kind": "pypi", "ident": "Demo_MCP.Server", "name": "Demo_MCP.Server", "platform": "python", "risk_grade": "Moderate"},
+    {"tool_name": "Example Coder", "tool_domain": "example-coder.dev", "category": "AI agents", "subcategory": "Coding agents", "agent_type": "Coding agent", "kind": "process_cli", "ident": "example-coder", "name": "Example Coder CLI", "platform": "cli", "risk_grade": "Not graded"},
+    {"tool_name": "Example Coder", "tool_domain": "example-coder.dev", "category": "AI agents", "subcategory": "Coding agents", "agent_type": "Coding agent", "kind": "vscode_ext", "ident": "ExampleCorp.example-coder", "name": "Example Coder for VS Code", "platform": "vscode", "risk_grade": "Not graded"}
+  ]
+}
